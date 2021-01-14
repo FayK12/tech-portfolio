@@ -1,6 +1,6 @@
 ---
 id: about
-title: About
+title: Who Am I?
 ---
 
 You can start your "About" page with an elevator pitch, one or two
