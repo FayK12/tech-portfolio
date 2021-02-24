@@ -3,27 +3,23 @@ id: about
 title: Who Am I?
 ---
 
-You can start your "About" page with an elevator pitch, one or two
-sentences about you! The rest of this page page can
-include a little bit about yourself. Some things you
-might include:
+Hello/Salaam/Bienvenue! 
 
-1. Your current position
-1. Organizations you're involved with
-1. Your personal and professional values
-1. Hobbies or fun facts
+So you want to learn more about me? Well, I'm currently completing my second Bachelor's degree (!!) in Computer Science.
+I have studied Biology, Accounting, worked in a global corporate organization, and Toronto hospitals, including Sunnybrook Health Sciences and Women's College Hospital. I've been involved in Executive roles with the Women in Computer Science group, Carleton Computer Science Society, and currently a member of Technolgap.
+Personally, my values include my faith, family, and close friends. Good people are hard to find. 
+Professionally, I value a culture of growth, respect, communication, and diversity of thought. 
+Fun facts: I flew a Cessna near the CN Tower, and bruised my arm a few times in archery club in University
 
-Write it in first (I) or third (Your Name Here) person.
 
-> Don't know what to write? Get a good friend to help! Set some time aside to soundboard.
 
 ## Current Role
 
-Grace Hopper Celebration Attendee
+Grace Hopper Celebration 2020 Attendee
 
 ## Recognition
 
-- 2020 Awesome Woman in Technology Award
+- SheHacks V top 20 
 
 ## Social Media
 
