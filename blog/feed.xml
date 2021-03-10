@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Faareha Khalid Blog</title>
+        <link>https://fayk12.github.io/tech-portfolio/blog</link>
+        <description>The best place to stay up-to-date with the latest Faareha Khalid news and events.</description>
+        <lastBuildDate>Fri, 02 Oct 2020 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Faareha Khalid Blog</title>
+            <url>https://fayk12.github.io/tech-portfolio/undefined</url>
+            <link>https://fayk12.github.io/tech-portfolio/blog</link>
+        </image>
+        <copyright>Copyright © 2021 Your Name Here</copyright>
+        <item>
+            <title><![CDATA[My vGHC 2020 experience]]></title>
+            <link>https://fayk12.github.io/tech-portfolio/blog/2020/10/02/blog-post.html</link>
+            <guid>https://fayk12.github.io/tech-portfolio/blog/2020/10/02/blog-post.html</guid>
+            <pubDate>Fri, 02 Oct 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>I was fortunate to attend the virtual Grace Hopper Conference in 2020, thanks to funding provided by the Women in Computer Science (WiCS) program at Carleton University. I had been able to attend the 2019 conference in person as well, so this gives m...</p>]]></description>
+        </item>
+    </channel>
+</rss>

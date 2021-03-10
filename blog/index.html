@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Blog · Faareha Khalid</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Relentlessly learning, improving, and aspiring technologist."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Blog · Faareha Khalid"/><meta property="og:type" content="website"/><meta property="og:url" content="https://fayk12.github.io/tech-portfolio/"/><meta property="og:description" content="Relentlessly learning, improving, and aspiring technologist."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/tech-portfolio/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://fayk12.github.io/tech-portfolio/blog/atom.xml" title="Faareha Khalid Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://fayk12.github.io/tech-portfolio/blog/feed.xml" title="Faareha Khalid Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/tech-portfolio/js/scrollSpy.js"></script><link rel="stylesheet" href="/tech-portfolio/css/main.css"/><script src="/tech-portfolio/js/codetabs.js"></script></head><body class="blog"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/tech-portfolio/"><h2 class="headerTitle">Faareha Khalid</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/tech-portfolio/docs/about" target="_self">About</a></li><li class=""><a href="/tech-portfolio/docs/projects" target="_self">Projects</a></li><li class="siteNavGroupActive siteNavItemActive"><a href="/tech-portfolio/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/tech-portfolio/blog/2020/10/02/blog-post">My vGHC 2020 experience</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="posts"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/tech-portfolio/blog/2020/10/02/blog-post">My vGHC 2020 experience</a></h1><p class="post-meta">October 2, 2020</p><div class="authorBlock"></div></header><article class="post-content"><div><span><p>I was fortunate to attend the virtual Grace Hopper Conference in 2020, thanks to funding provided by the Women in Computer Science (WiCS) program at Carleton University. I had been able to attend the 2019 conference in person as well, so this gives me the opportunity to now compare the two experiences.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="tldr"></a><a href="#tldr" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>TL;DR</h2>
+<p><em>If you are attending the virtual GHC for the Career Fair, save your money and skip it</em>. A lot of other virtual conferences and opportunities have come through as a result of the <strong>failure</strong> of GHC's Career Fair, and those conferences are <em>FREE</em> to attend <em>unlike GHC</em></p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="what-is-ghc-"></a><a href="#what-is-ghc-" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is GHC ?</h2>
+<p>The <a href="https://ghc.anitab.org/">Grace Hopper Conference</a> is an annual conference, and <em>the world's largest gathering of women in computing</em></p>
+<p>In 2019, the live conference in Orlando Florida had 26,000 attendees. The conference has many features, including workshops, networking, mentorship, poster presentations, speakers from academic, government, and industry. The live conference has a massive Career Fair where recruiters and engineers amass from companies such as Apple, Facebook, Amazon, Google, JP Morgan, Morgan Stanley, Goldman Sachs, Slack, Home Depot, Microsoft, Salesforce, Stripe, Quora, and <strong>SO MANY MORE COMPANIES</strong>. Of course, there's swag and after parties.</p>
+<h6><a class="anchor" aria-hidden="true" id="cost-the-ghc-student-_ticket_-was--500-usd600-cad-not-including-airfare-accommodations-or-food"></a><a href="#cost-the-ghc-student-_ticket_-was--500-usd600-cad-not-including-airfare-accommodations-or-food" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cost: the GHC student <em>ticket</em> was ~ $500 USD($600 CAD), not including airfare, accommodations, or food.</h6>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="ghc-2019"></a><a href="#ghc-2019" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>GHC 2019</h2>
+<p>I personally believe that one of the reasons why 2019 was an unforgetable experience was because it was live, in person. The experience and frustration with registration, walking from one end of the hall to the other with feet aching, attending Twitter's after-party or others hosted by companies, signing up for said after-parties or trying to figure out how to receive the exclusive invite to them, meeting fellow students on the bus or walking from hall to hall, meeting Amazon engineers at a Nike after-party, interviewing on site and being treated to lounge beverages, asking students &quot;hey, which booth gave you that ice cream&quot; (it was datto), standing in line for BlackRock's smoothies and learning that the person behind you is an engineer at Apple - these experiences cannot be replicated in the remote environment.</p>
+<p>Seeing as the 2021 conference will also be <em>broadcasted</em> from Chicago, I'm here to share with you the 2020 virtual experience.</p>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="what-is-vghc-"></a><a href="#what-is-vghc-" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is vGHC ?</h2>
+<p>vGHC is the virtual Grace Hopper Conference. In the year 2020, the conference, like everything else, was remote because of the COVID-19 pandemic. It took place from Sept 29 - Oct 3, 2020.</p>
+<p>The biggest disappointment and shock from vGHC, for students and sponsor companies, was that a mere 3 days before the start of the conference, the Career Fair at GHC, was <strong>CANCELLED</strong> during the original conference dates. It left companies scrambling to make changes and provide a way to connect with students, whether it was through Zoom or other platforms. Though the GHC Career Fair was rescheduled for a future date in November 2020, it was severly limited in capacity and the majority of vGHC attendees could not book a slot to chat with company recruiters.</p>
+<h5><a class="anchor" aria-hidden="true" id="cost-the-vghc-ticket-was-still-200-usd"></a><a href="#cost-the-vghc-ticket-was-still-200-usd" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cost: the vGHC ticket was still $200 USD</h5>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="the-good"></a><a href="#the-good" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Good</h2>
+<ul>
+<li>some of the GHC content was recorded and available for playback for a limited time frame after GHC ended</li>
+<li>I <em><strong>LOVED</strong></em> the <em>'Deal or no deal: Negotiate your starting salary' by Kim Nguyen and Kasey Champion</em>. I took away a lot of gems from this straight up talk, and I connected with Kim post-GHC and she's been awesome!</li>
+<li>I attended my first ever Open-Source Day (OSD) at GHC, and worked on an open source issue</li>
+<li>I met a participant at GHC whom I worked with on the OSD issue, and we stayed connected post-GHC. Especially in this pandemic year, I appreciated meeting a GHC participant and working with her the whole day</li>
+<li>networking on LinkedIn with people I met during OSD at GHC helped me learn about opportunities I can participate in, such as a meetup group that practises interview coding questions</li>
+</ul>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="the-bad"></a><a href="#the-bad" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The Bad</h2>
+<ul>
+<li>the login info for vGHC came on the morning of the conference (Tue Sept 29) when it was expected to come the day before (Mon Sept 28). This was on top of cancelling the Career Fair on Sat Sept 26</li>
+<li>I couldn’t get into the OSD event I registered for; what’s the point of registering?</li>
+<li>virtual networking in different workshops was really a Microsoft Excel sheet that collected everyone's LinkedIn contact info and resume submissions. I did not hear from anyone officially (related to a company) but did have some random people add me on LinkedIn. BE CAREFUL who you share your LinkedIn contact with as well</li>
+<li>during the lectures on the live stage and the workshops, there was <strong>NO platform</strong> on which you could interact with the speaker for Q/A. You couldn't interact with <em>anyone</em> during the session, even if you were having technical difficulties or wanted to contact someone from the AnitaB foundation. It was <em>frustrating</em> because it was literally like <strong>you were watching TV or a YouTube talk, except that you paid $$$ for it</strong></li>
+<li>the limited Career Fair that was available was <strong>very restricted</strong> in its timings (couple of hours on some days). The live Career Fair in 2019 was a full day affair and you could walk around from booth to booth. In the virtual setting, you had to log in to different platforms, whether it was Zoom, a company specific platform, etc. It was utterly frustrating and disorganized</li>
+<li>The workshops had a limit of 500 attendees when the conference has <em>30,000 attendees</em>. How does that even make sense given <strong>the COST of a student ticket?!</strong></li>
+<li>for vGHC, you had to preregister for the workshop sessions you wanted to attend. This pre-registration was <em>USELESS</em> because it was a first-come-first-serve queue entry into the session, usually on Zoom. Only the first 500 got to enter. Noone checked to see if you had pre-registered for the workshop you're attending. My parter with whom I worked on the OSD issue said she would log into the Zoom call <em>an HOUR</em> before it started, just to hold her place for the virtual session. This means there is no guarantee for those who pre-register that they'll get into their session</li>
+<li>if a workshop is full with 500 participants, you just have to keep clicking the Zoom link multiple times, hoping 1 person will leave and you'll get their spot to get in</li>
+<li>the pre-registration allowed 1000 people to register for a session but Zoom capped participants at 500 people <strong>(!!!)</strong></li>
+<li>the workshops were not recorded, although the lectures were. There was no reason provided why one type of content could be recorded and available post-GHC for a couple of months, but another type of content would not be recorded for playback</li>
+</ul>
+<hr>
+<h2><a class="anchor" aria-hidden="true" id="resources"></a><a href="#resources" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resources</h2>
+<p>These are some GHC workshop resources I still have handy:</p>
+<ul>
+<li><a href="https://github.com/joatmon08/tech-portfolio">Make your own technical portfolio</a></li>
+<li><a href="bit.ly/technical-whiteboard">Interviewing tips from Avalara</a></li>
+<li><a href="https://github.com/uttarashekar/ghc_2020_aws_workshop">AWS workshop</a></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"></div></div></div></div></div><footer class="nav-footer" id="footer"><section class="social"><a href="https://www.linkedin.com/in/faarehakhalid" target="_blank" class="social"><img alt="LinkedIn" src="/tech-portfolio/img/linkedin.svg"/></a><a href="https://twitter.com/@FaarehaK" target="_blank" class="social"><img alt="Twitter" src="/tech-portfolio/img/twitter.svg"/></a><a href="https://github.com/FayK12" target="_blank" class="social"><img alt="GitHub" src="/tech-portfolio/img/github.svg"/></a></section><section class="copyright">Copyright © 2021 Your Name Here. Created with Docusaurus.</section></footer></div></body></html>
